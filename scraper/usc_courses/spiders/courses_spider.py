@@ -38,6 +38,8 @@ class CoursesSpider(scrapy.Spider):
 
     def parse_course(self, response):
         title = response.css('#course_preview_title::text').get().strip()
+        code = " ".join(title.split(' ')[:2])
+        title = " ".join(title.split(' ')[2:])
         prefix = title.split()[0]
         enroll_in = response.css('#course_preview_title').xpath(
             './following-sibling::text()[contains(., "Enroll in")]')
@@ -51,6 +53,7 @@ class CoursesSpider(scrapy.Spider):
                 prerequisities.append(req.xpath('text()').get())
             yield {
                 'prefix': prefix,
+                'code': code,
                 'title': title,
                 'units': units,
                 'description': description,
@@ -62,6 +65,7 @@ class CoursesSpider(scrapy.Spider):
                 request = scrapy.Request(url='http://catalogue.usc.edu/'+path,
                         callback=self.parse_enrolled_in_course)
                 request.meta['title'] = title
+                request.meta['code'] = code
                 request.meta['prefix'] = prefix
                 yield request
 
@@ -75,6 +79,7 @@ class CoursesSpider(scrapy.Spider):
             prerequisities.append(req.xpath('text()').get())
         yield {
             'prefix': response.meta['prefix'],
+            'code': response.meta['code'],
             'title': response.meta['title'],
             'units': units,
             'description': description,
