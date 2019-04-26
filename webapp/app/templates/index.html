@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Pre-Req Optimizer for {{ current_user.username }}</h1>
+    {% for course in courses %}
+    <div>
+        <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
+        <p>{{ course.description }}</p>
+        <p>Units: {{ course.units }}</p>
+        <p>Value: {{ course.value }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
