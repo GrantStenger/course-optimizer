@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/Home/projects/prereq-optimizer/webapp/venv_prereq_webapp"
+VIRTUAL_ENV="/Users/Home/projects/course-optimizer/webapp/venv_prereq_webapp"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

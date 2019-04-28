@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/Home/projects/prereq-optimizer/webapp/venv_prereq_webapp"
+set -gx VIRTUAL_ENV "/Users/Home/projects/course-optimizer/webapp/venv_prereq_webapp"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

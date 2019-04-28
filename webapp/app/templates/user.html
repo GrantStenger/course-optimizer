@@ -5,8 +5,10 @@
     <hr>
     {% for course in user.courses %}
     <div>
-        <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
-        <p>{{ course.description }}</p>
+        <p>
+          <b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b>
+          {{ course.description }}
+        </p>
         <p>Units: {{ course.units }}</p>
         <p>Value: {{ course.value }}</p>
     </div>
