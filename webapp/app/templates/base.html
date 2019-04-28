@@ -7,13 +7,14 @@
         {% endif %}
     </head>
     <body>
-        <div>Course Optimizer:
-            <a href="{{ url_for('index') }}">Home</a>
+        <div>
+            <a href="{{ url_for('index') }}">Course Optimizer</a>
             {% if current_user.is_anonymous %}
             <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">New Account</a>
             {% else %}
             <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-            <a href="{{ url_for('add_class') }}">Add Course</a>
+            <a href="{{ url_for('add_course') }}">Add Course</a>
             <a href="{{ url_for('logout') }}">Logout</a>
             {% endif %}
         </div>

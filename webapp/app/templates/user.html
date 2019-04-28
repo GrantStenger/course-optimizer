@@ -5,12 +5,15 @@
     <hr>
     {% for course in user.courses %}
     <div>
-        <p>
-          <b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b>
-          {{ course.description }}
-        </p>
+        <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
+        <p>{{ course.description }}</p>
         <p>Units: {{ course.units }}</p>
         <p>Value: {{ course.value }}</p>
     </div>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>{{ form.drop_course }}</p>
+        <input type="hidden" name="course_id" value={{ course.id }}>
+    </form>
     {% endfor %}
 {% endblock %}

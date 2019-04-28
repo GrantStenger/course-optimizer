@@ -28,6 +28,7 @@ class Course(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     prefix = db.Column(db.String(8), nullable=False)
     number = db.Column(db.Integer, nullable=False)
+    title = db.Column(db.String(100))
     description = db.Column(db.Text)
     units = db.Column(db.Integer)
     value = db.Column(db.Integer)
