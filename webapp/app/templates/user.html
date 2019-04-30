@@ -1,23 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>User: {{ user.username }}</h1>
-    <hr>
-    {% if user.courses.first() == None %}
-      <div><p>Add some courses!</p></div>
-    {% else %}
-      {% for course in user.courses %}
+  <table>
+    <tr valign="top">
+      <td><img src="{{ user.avatar(128) }}"></td>
+      <td>
+        <h1>User: {{ user.username }}</h1>
+        {% if user.about_me %}
+          <p>{{ user.about_me }}</p>
+        {% endif %}
+        {% if user.last_seen %}
+          <p>Last seen on: {{ user.last_seen }}</p>
+        {% endif %}
+        {% if user == current_user %}
+          <p><a href="{{ url_for('edit_profile') }}">Edit your profile</a></p>
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+  <hr>
+  {% if user.courses.first() == None %}
+    <div><p>Add some courses!</p></div>
+  {% else %}
+    {% for course in user.courses %}
       <div>
-          <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
-          <p>{{ course.description }}</p>
-          <p>Units: {{ course.units }}</p>
-          <p>Value: {{ course.value }}</p>
+        <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
+        <p>{{ course.description }}</p>
+        <p>Units: {{ course.units }}</p>
+        <p>Value: {{ course.value }}</p>
       </div>
       <form action="" method="post">
-          {{ form.hidden_tag() }}
-          <p>{{ form.drop_course }}</p>
-          <input type="hidden" name="course_id" value={{ course.id }}>
+        {{ form.hidden_tag() }}
+        <p>{{ form.drop_course }}</p>
+        <input type="hidden" name="course_id" value={{ course.id }}>
       </form>
-      {% endfor %}
-    {% endif %}
+    {% endfor %}
+  {% endif %}
 {% endblock %}
