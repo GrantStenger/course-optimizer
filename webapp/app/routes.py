@@ -108,7 +108,6 @@ def user(username):
     drop_form = DropCourseForm()
     val_form = UpdateCourseValForm()
     if drop_form.validate_on_submit() and 'drop_course' in request.form:
-        print(request.form)
         course = user.courses.filter_by(id=request.form['drop_course_id']).one()
         db.session.delete(course)
         db.session.commit()
@@ -120,16 +119,6 @@ def user(username):
         db.session.commit()
         flash('Course value has been updated.')
         return redirect(url_for('user', username=current_user.username))
-    elif request.method == 'GET':
-        print(request.form)
-        print(val_form)
-        print(request)
-        print(request.data)
-        print(val_form.title.data)
-        course = user.courses.first()
-        val_form.value.data = course.value
-        val_form.title.data = course.title
-        print(val_form.title.data)
     return render_template('user.html', user=user, drop_form=drop_form,
                            val_form=val_form)
 

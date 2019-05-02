@@ -55,8 +55,6 @@ class EditProfileForm(FlaskForm):
 
 class DropCourseForm(FlaskForm):
     drop_course = SubmitField('Drop Course')
-    course_id   = "" # plz delete this line
 
 class UpdateCourseValForm(FlaskForm):
     value = IntegerField('Value', validators=[DataRequired()])
-    title = StringField('Title', validators=[DataRequired()])
