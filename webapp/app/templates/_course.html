@@ -1,0 +1,16 @@
+<div>
+  <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
+  <p>{{ course.description }}</p>
+  <p>Units: {{ course.units }}</p>
+  <form action="" method="post">
+    {{ drop_form.hidden_tag() }}
+    <p>{{ val_form.value }}</p>
+    <p>{{ val_form.title }}</p>
+    <input type="hidden" name="val_course_id" value={{ course.id }}>
+  </form>
+</div>
+<form action="" method="post">
+  {{ drop_form.hidden_tag() }}
+  <p>{{ drop_form.drop_course }}</p>
+  <input type="hidden" name="drop_course_id" value={{ course.id }}>
+</form>

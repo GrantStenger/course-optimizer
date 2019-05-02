@@ -3,7 +3,7 @@ from app import app, db
 from flask_login import current_user, login_user, logout_user, login_required
 from datetime import datetime
 from app.forms import LoginForm, RegistrationForm, CourseRegistrationForm
-from app.forms import DropCourseForm, EditProfileForm
+from app.forms import DropCourseForm, EditProfileForm, UpdateCourseValForm
 from app.models import User, Course
 from werkzeug.urls import url_parse
 
@@ -105,14 +105,33 @@ def add_course():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    form = DropCourseForm()
-    if form.validate_on_submit():
-        course = user.courses.filter_by(id=request.form['course_id']).one()
+    drop_form = DropCourseForm()
+    val_form = UpdateCourseValForm()
+    if drop_form.validate_on_submit() and 'drop_course' in request.form:
+        print(request.form)
+        course = user.courses.filter_by(id=request.form['drop_course_id']).one()
         db.session.delete(course)
         db.session.commit()
         flash('You dropped ' + course.title)
         return redirect('user/' + str(current_user.username))
-    return render_template('user.html', user=user, form=form)
+    elif val_form.validate_on_submit() and 'value' in request.form:
+        course = user.courses.filter_by(id=request.form['val_course_id']).one()
+        course.value = val_form.value.data
+        db.session.commit()
+        flash('Course value has been updated.')
+        return redirect(url_for('user', username=current_user.username))
+    elif request.method == 'GET':
+        print(request.form)
+        print(val_form)
+        print(request)
+        print(request.data)
+        print(val_form.title.data)
+        course = user.courses.first()
+        val_form.value.data = course.value
+        val_form.title.data = course.title
+        print(val_form.title.data)
+    return render_template('user.html', user=user, drop_form=drop_form,
+                           val_form=val_form)
 
 @app.route('/users')
 def users():
