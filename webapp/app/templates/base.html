@@ -5,6 +5,7 @@
         {% else %}
         <title>Pre-Req Optimizer</title>
         {% endif %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     </head>
     <body>
         <div>
@@ -30,4 +31,9 @@
         {% endwith %}
         {% block content %}{% endblock %}
     </body>
+    <script>
+      $('.course_container').click(function(){
+        $(this).find('.course_info').toggle();
+      });
+    </script>
 </html>
