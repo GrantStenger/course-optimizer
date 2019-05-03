@@ -10,6 +10,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.String(128))
     courses = db.relationship('Course', backref='user', lazy='dynamic')
+    departments = db.relationship('Department', backref='user', lazy='dynamic')
     about_me = db.Column(db.String(140))
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
 
@@ -45,3 +46,12 @@ class Course(db.Model):
 
     def __repr__(self):
         return f"<Course {self.prefix} {str(self.number)}>"
+
+class Department(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(100), nullable=False)
+    value = db.Column(db.Integer)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+    def __repr__(self):
+        return f"<Department {self.title}>"

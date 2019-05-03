@@ -19,13 +19,9 @@
     </tr>
   </table>
   <hr>
-  {% if user.courses.first() == None %}
-    <div><p>Add some courses!</p></div>
-  {% else %}
-    <div>
-      {% for course in user.courses %}
-        {% include '_small_course.html' %}
-      {% endfor %}
-    </div>
-  {% endif %}
+  <div>
+    {% for course in user.courses %}
+      {% include '_course.html' %}
+    {% endfor %}
+  </div>
 {% endblock %}

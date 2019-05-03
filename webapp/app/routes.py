@@ -4,6 +4,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from datetime import datetime
 from app.forms import LoginForm, RegistrationForm, CourseRegistrationForm
 from app.forms import DropCourseForm, EditProfileForm, UpdateCourseValForm
+from app.forms import DepartmentsForm
 from app.models import User, Course
 from werkzeug.urls import url_parse
 
@@ -105,6 +106,8 @@ def add_course():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
+    if user.courses.first() == None:
+        return redirect('new_user/' + str(current_user.username))
     drop_form = DropCourseForm()
     val_form = UpdateCourseValForm()
     if drop_form.validate_on_submit() and 'drop_course' in request.form:
@@ -121,6 +124,57 @@ def user(username):
         return redirect(url_for('user', username=current_user.username))
     return render_template('user.html', user=user, drop_form=drop_form,
                            val_form=val_form)
+
+@app.route('/new_user/<username>')
+@login_required
+def new_user(username):
+    user = User.query.filter_by(username=username).first_or_404()
+
+    departments=[
+        {
+            'title': 'History',
+            'value': ''
+        },
+        {
+            'title': 'Math',
+            'value': ''
+        },
+        {
+            'title': 'Spanish',
+            'value': ''
+        },
+        {
+            'title': 'Literature',
+            'value': ''
+        },
+        {
+            'title': 'Biology',
+            'value': ''
+        },
+        {
+            'title': 'Computer Science',
+            'value': ''
+        },
+        {
+            'title': 'Business',
+            'value': ''
+        },
+        {
+            'title': 'Architecture',
+            'value': ''
+        }
+    ]
+
+    dept_form = DepartmentsForm()
+    if dept_form.validate_on_submit():
+        department = user.departments.filter_by(id=request.form['dept_id']).one()
+        department.value = dept_form.value.data
+        db.session.commit()
+        flash('Course value has been updated.')
+        return redirect(url_for('user', username=current_user.username))
+
+    return render_template('new_user.html', departments=departments,
+                           dept_form=dept_form)
 
 @app.route('/users')
 def users():

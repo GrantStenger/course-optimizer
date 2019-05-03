@@ -1,15 +1,22 @@
-<div>
-  <p><b>{{ course.prefix }} {{ course.number }} {{ course.title }}:</b></p>
-  <p>{{ course.description }}</p>
-  <p>Units: {{ course.units }}</p>
-  <form action="" method="post">
-    {{ val_form.hidden_tag() }}
-    <input type="text" name="value" value={{ course.value }}>
-    <input type="hidden" name="val_course_id" value={{ course.id }}>
-  </form>
-  <form action="" method="post">
-    {{ drop_form.hidden_tag() }}
-    <p>{{ drop_form.drop_course }}</p>
-    <input type="hidden" name="drop_course_id" value={{ course.id }}>
-  </form>
+<div class="course_container">
+  <div class="course_title">
+    <form action="" method="post">
+      {{ val_form.hidden_tag() }}
+      <input type="text" name="value" value={{ course.value }} size=2>
+      <input type="hidden" name="val_course_id" value={{ course.id }}>
+    </form>
+    &nbsp;
+    <a href="#" onclick="showCourse()">
+      {{ course.prefix }} {{ course.number }} {{ course.title }}
+    </a>
+  </div>
+  <div class="course_info" style="display:none">
+    <p>{{ course.description }}</p>
+    <p>Units: {{ course.units }}</p>
+    <form action="" method="post">
+      {{ drop_form.hidden_tag() }}
+      <p>{{ drop_form.drop_course }}</p>
+      <input type="hidden" name="drop_course_id" value={{ course.id }}>
+    </form>
+  </div>
 </div>

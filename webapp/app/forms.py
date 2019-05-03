@@ -58,3 +58,6 @@ class DropCourseForm(FlaskForm):
 
 class UpdateCourseValForm(FlaskForm):
     value = IntegerField('Value', validators=[DataRequired()])
+
+class DepartmentsForm(FlaskForm):
+    value = IntegerField('Value', validators=[DataRequired()])

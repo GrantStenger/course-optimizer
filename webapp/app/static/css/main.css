@@ -1,17 +1,4 @@
-.course_container {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.course_container div {
-    width:100%;
-}
-.course_container .course_title {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.course_container .course_info {
-    display: none;
-    padding : 5px;
+
+.course_title input{
+  float:left;
 }

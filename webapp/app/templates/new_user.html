@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h3>Hello new user, please rate the following departments:</h3>
+  {% for department in departments %}
+    <form>
+      {{ dept_form.hidden_tag() }}
+      <input type="text" name="value"  size=3 value={{ department.value }}>
+      &nbsp;{{ department.title }}
+    </form>
+  {% endfor %}
+{% endblock %}
