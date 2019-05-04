@@ -5,7 +5,7 @@ from datetime import datetime
 from app.forms import LoginForm, RegistrationForm, CourseRegistrationForm
 from app.forms import DropCourseForm, EditProfileForm, UpdateCourseValForm
 from app.forms import DepartmentsForm
-from app.models import User, Course
+from app.models import User, Course, Department
 from werkzeug.urls import url_parse
 
 @app.before_request
@@ -86,6 +86,13 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
+
+def add_departments(user, departments):
+    for dept in departments:
+        dept_obj = Department(title=dept.title, user=user)
+        db.session.add(dept_obj)
+    db.session.commit()
+
 @app.route('/add_Course', methods=['GET', 'POST'])
 @login_required
 def add_course():
@@ -125,55 +132,22 @@ def user(username):
     return render_template('user.html', user=user, drop_form=drop_form,
                            val_form=val_form)
 
-@app.route('/new_user/<username>')
+@app.route('/new_user/<username>', methods=['GET', 'POST'])
 @login_required
 def new_user(username):
     user = User.query.filter_by(username=username).first_or_404()
-
-    departments=[
-        {
-            'title': 'History',
-            'value': ''
-        },
-        {
-            'title': 'Math',
-            'value': ''
-        },
-        {
-            'title': 'Spanish',
-            'value': ''
-        },
-        {
-            'title': 'Literature',
-            'value': ''
-        },
-        {
-            'title': 'Biology',
-            'value': ''
-        },
-        {
-            'title': 'Computer Science',
-            'value': ''
-        },
-        {
-            'title': 'Business',
-            'value': ''
-        },
-        {
-            'title': 'Architecture',
-            'value': ''
-        }
-    ]
-
     dept_form = DepartmentsForm()
     if dept_form.validate_on_submit():
+        print(request)
+        print(request.form)
+        print(request.form['dept_id'])
         department = user.departments.filter_by(id=request.form['dept_id']).one()
         department.value = dept_form.value.data
         db.session.commit()
-        flash('Course value has been updated.')
+        flash('Department value has been updated.')
         return redirect(url_for('user', username=current_user.username))
 
-    return render_template('new_user.html', departments=departments,
+    return render_template('new_user.html', user=user,
                            dept_form=dept_form)
 
 @app.route('/users')
