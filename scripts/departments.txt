@@ -1,0 +1,232 @@
+ACAD Arts, Technology and the Business of Innovation
+ACCT Accounting
+ACMD Academic Medicine
+ADNT Advanced Dental Education Conjoint Program
+AEST Aerospace Studies
+AHIS Art History
+ALI American Language Institute
+AME Aerospace and Mechanical Engineering
+AMED Anesthesia and Medicine
+AMST American Studies and Ethnicity
+ANAT Anatomy
+ANST Anesthesiology
+ANTH Anthropology
+ARAB Arabic
+ARCG Archaeology
+ARCH Architecture
+ARLT Art
+ART Arts and Letters
+ARTL Arts Leadership
+ASCJ Communication and Journalism
+ASTE Astronautics and Space Technology
+ASTR Astronomy
+BAEP Business Entrepreneurship
+BIOC Biochemistry
+BISC Biological Sciences
+BKN Biokinesiology
+BMDD Biopharmaceutical Marketing
+BME Biomaterials and Digital Dentistry
+BPMK Biomedical Engineering
+BUAD Business Administration
+BUCO Business Communication
+CBG Cancer Biology and Genomics
+CBY Craniofacial Biology
+CE Civil Engineering
+CHE Chemical Engineering
+CHEM Chemistry
+CJ Classics
+CLAS Community Dentistry
+CMDT Community Oral Health
+CMGT Communication Management
+CMPP Motion Picture Producing
+CNB Cinematic Arts
+CNTV Comparative Literature
+COH Communication
+COLT Thematic Option
+COMM School of Art and Design (Critical Studies)
+CORE Computer Science
+CRIT Comparative Studies in Literature and Culture
+CSCI Animation
+CSLC Cinema and Media Studies
+CTAN Interactive Media
+CTCS Production
+CTIN Curriculum, Teaching and Special Education
+CTPR Writing
+CTSE Clinical and Experimental Therapeutics
+CTWR Dance
+CXPT Dental Biochemistry
+DANC Dentistry
+DBIO Dental Histology
+DENT Dental Hygiene
+DES Oral Diagnosis and Radiology
+DHIS Dental Materials
+DHYG Dental Problem Based Learning
+DIAG Pharmacology
+DMAT Digital Social Media
+DPBL Data Sciences and Operations
+DPHR Development, Stem Cells and Regenerative Medicine
+DSM East Asian Languages and Cultures
+DSO East Asian Studies
+DSR Economics
+EALC Education Counseling
+EASC Higher and Postsecondary Education
+ECON Educational Policy, Planning and Administration
+EDCO Educational Psychology and Technology
+EDHP Education
+EDPA Education Expanded
+EDPT Electrical Engineering
+EDUC Endodontics
+EDUE Environmental Engineering
+EE English
+ENDO Engineering
+ENE Environmental Studies
+ENGL Design
+ENGR Finance and Business Economics
+ENST Food Industry Management
+FBE Fixed Prosthodontics
+FIM French
+FPRO Freshman Seminars
+FREN Geriatric Dentistry
+FSEM Geography
+GDEN Earth Sciences
+GEOG German
+GEOL Gerontology
+GERM General Education Seminar
+GERO General Practice Residency
+GESM Global Policy, Planning and Development
+GPPD Greek
+GPR Graduate Studies
+GR Graduate School of Business Administration
+GRSC Geriatric and Special Patient Dentistry
+GSBA Human Behavior
+GSPD Human Biology
+HBHV Health Care Decision Analysis
+HBIO Hebrew
+HCDA History
+HEBR Health Care Management
+HIST Health Promotion and Disease Prevention Studies
+HMGT Human Resource Management
+HP Integrated Design, Business and Technology
+HRM Media Arts and Practice
+IDSN Interdisciplinary — Developmental Dentistry
+IML Interdisciplinary Major Program
+INDD Informatics
+INDS Interdisciplinary — Basic Science
+INF Interdepartmental Medicine
+INTB Interdisciplinary — Practice Dynamics
+INTD Interdisciplinary — Restorative Dentistry
+INTP Interdisciplinary — Surgical Sciences
+INTR Interdisciplinary — Diagnostic Sciences
+INTS International Relations
+INTX Persian
+IR Industrial and Systems Engineering
+IRAN Italian
+ISE Information Technology Program
+ITAL Journalism
+ITP Judaic Studies
+JOUR Latin
+JS Law
+LAT Liberal Studies
+LAW Library and Information Management
+LBST Linguistics
+LIM Materials Science
+LING Mathematics
+MASC Microbiology and Immunology
+MATH Medical Biophysics
+MBIO Multidisciplinary Activities
+MBPH Middle East Studies
+MDA Medical Biology
+MDES Medical Sciences (200–400)
+MEDB Medical Sciences (500)
+MEDS Molecular Microbiology and Immunology
+MICB Marketing
+MKT Management and Organization
+MOR Performance (Early Music)
+MPEM Performance (Guitar)
+MPGU Medical Physiology
+MPHY Performance (Keyboard Studies)
+MPKS Performance (Popular Music)
+MPPM Performance (Strings)
+MPST Molecular Pharmacology and Toxicology
+MPTX Performance (Vocal Arts)
+MPVA Performance (Wind and Percussion)
+MPWP Military Science
+MS Sacred Music
+MSCR Molecular Structure and Signaling
+MSS Music Technology
+MTAL Cell and Neurobiology
+MTEC Conducting
+MUCD Choral Music
+MUCM Composition
+MUCO Music Teaching and Learning
+MUEN Music Ensemble
+MUHL Music History and Literature
+MUIN Music Industry
+MUJZ Jazz Studies
+MUSC School of Music
+NAUT Nautical Science
+NEUR Neuroscience (Undergraduate)
+NIIN Neuroimaging and Informatics
+NSC Naval Science
+NSCI Neuroscience (Graduate)
+NURS Nursing
+OCCL Occlusion
+OFP Orofacial Pain Oral Medicine
+OFPM Orofacial Pain
+OMOD Oral Medicine Oral Diagnosis
+OPER Operative Dentistry
+OPR Oral Pathology and Radiology
+ORTH Orthodontics
+OS Ocean Sciences
+OT Occupational Science and Occupational Therapy
+PAIN Pain Medicine
+PATH Pathology (Herman Ostrow School of Dentistry)
+PCPA Pathology (Keck School of Medicine)
+PEDO Primary Care Physician Assistant
+PERI Pediatric Dentistry
+PHBI Periodontics
+PHED Physiology and Biophysics
+PHIL Physical Education
+PHRD Philosophy
+PHTS Pharmacy
+PHYS Pharmaceutical and Translational Sciences
+PJMT Physics
+PLUS Project Management
+PM Urban and Regional Planning
+PMEP Preventive Medicine
+POIR Pharmaceutical Economics and Policy
+PORT Political Science and International Relations
+POSC Portuguese
+PPD Political Science
+PPDE Policy, Planning, and Development
+PR Policy, Planning, and Development — Expanded
+PSCI Public Relations
+PSYC Pharmaceutical Sciences
+PT Psychology
+PTE Physical Therapy
+PTHL Petroleum Engineering
+PUAD Public Administration
+PUBD Public Diplomacy
+QBIO Quantitative Biology
+RED Real Estate Development
+REL Religion
+REST Restorative Dentistry
+RPRO Removable Prosthodontics
+RSCI Regulatory Science
+RXRS Pharmaceutical and Regulatory Science
+SAE Systems Architecting and Engineering
+SCOR Screen Scoring
+SCRM Stem Cell Biology and Regenerative Medicine
+SLL Slavic Languages and Literatures
+SOCI Sociology
+SOWK Social Work
+SPAN Spanish
+SSCI Spatial Sciences Institute
+SSEM Sophomore Seminars
+SURG Oral Surgery
+SWMS Gender Studies
+THTR Dramatic Arts
+TRGN Translational Genomics
+USC University of Southern California
+VISS Visual Studies
+WRIT Writing Program

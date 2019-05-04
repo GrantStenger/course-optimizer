@@ -86,13 +86,6 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
-
-def add_departments(user, departments):
-    for dept in departments:
-        dept_obj = Department(title=dept.title, user=user)
-        db.session.add(dept_obj)
-    db.session.commit()
-
 @app.route('/add_Course', methods=['GET', 'POST'])
 @login_required
 def add_course():
@@ -136,6 +129,9 @@ def user(username):
 @login_required
 def new_user(username):
     user = User.query.filter_by(username=username).first_or_404()
+
+    print(user)
+
     dept_form = DepartmentsForm()
     if dept_form.validate_on_submit():
         print(request)
