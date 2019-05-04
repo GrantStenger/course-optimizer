@@ -1,3 +1,4 @@
+import json
 
 def get_prefixes():
     r_file = open('prefixes.txt', 'r')
@@ -32,10 +33,25 @@ def add_comma():
     r_file.close()
     w_file.close()
 
+def depts_to_json():
+    r_file = open('departments.txt', 'r')
+    data = []
+    line = r_file.readline()
+    while line:
+        course = {}
+        course['prefix'] = line.split(' ')[0]
+        course['title'] = str(' '.join(line.split(' ')[1:]))[:-1]
+        data.append(course)
+        line = r_file.readline()
+    r_file.close()
+
+    with open('departments.json', 'w') as w_file:
+        json.dump(data, w_file)
+
 if __name__ == "__main__":
-    # prefixes = get_prefixes()
-    # titles = get_full_titles()
-    #
-    # for i in range(len(prefixes)):
-    #     print(prefixes[i], titles[i])
-    add_comma()
+    with open("../data/depts_pretty.json", "r") as read_file:
+        data = json.load(read_file)
+    data_str = json.dumps(data, indent=2)
+    print(data_str)
+    for course in data:
+        print(course['title'])

@@ -1,0 +1,926 @@
+[
+  {
+    "prefix": "ACAD",
+    "title": "Arts, Technology and the Business of Innovation"
+  },
+  {
+    "prefix": "ACCT",
+    "title": "Accounting"
+  },
+  {
+    "prefix": "ACMD",
+    "title": "Academic Medicine"
+  },
+  {
+    "prefix": "ADNT",
+    "title": "Advanced Dental Education Conjoint Program"
+  },
+  {
+    "prefix": "AEST",
+    "title": "Aerospace Studies"
+  },
+  {
+    "prefix": "AHIS",
+    "title": "Art History"
+  },
+  {
+    "prefix": "ALI",
+    "title": "American Language Institute"
+  },
+  {
+    "prefix": "AME",
+    "title": "Aerospace and Mechanical Engineering"
+  },
+  {
+    "prefix": "AMED",
+    "title": "Anesthesia and Medicine"
+  },
+  {
+    "prefix": "AMST",
+    "title": "American Studies and Ethnicity"
+  },
+  {
+    "prefix": "ANAT",
+    "title": "Anatomy"
+  },
+  {
+    "prefix": "ANST",
+    "title": "Anesthesiology"
+  },
+  {
+    "prefix": "ANTH",
+    "title": "Anthropology"
+  },
+  {
+    "prefix": "ARAB",
+    "title": "Arabic"
+  },
+  {
+    "prefix": "ARCG",
+    "title": "Archaeology"
+  },
+  {
+    "prefix": "ARCH",
+    "title": "Architecture"
+  },
+  {
+    "prefix": "ARLT",
+    "title": "Arts and Letters"
+  },
+  {
+    "prefix": "ART",
+    "title": "Art"
+  },
+  {
+    "prefix": "ARTL",
+    "title": "Arts Leadership"
+  },
+  {
+    "prefix": "ASCJ",
+    "title": "Communication and Journalism"
+  },
+  {
+    "prefix": "ASTE",
+    "title": "Astronautics and Space Technology"
+  },
+  {
+    "prefix": "ASTR",
+    "title": "Astronomy"
+  },
+  {
+    "prefix": "BAEP",
+    "title": "Business Entrepreneurship"
+  },
+  {
+    "prefix": "BIOC",
+    "title": "Biochemistry"
+  },
+  {
+    "prefix": "BISC",
+    "title": "Biological Sciences"
+  },
+  {
+    "prefix": "BKN",
+    "title": "Biokinesiology"
+  },
+  {
+    "prefix": "BMDD",
+    "title": "Biomaterials and Digital Dentistry"
+  },
+  {
+    "prefix": "BME",
+    "title": "Biomedical Engineering"
+  },
+  {
+    "prefix": "BPMK",
+    "title": "Biopharmaceutical Marketing"
+  },
+  {
+    "prefix": "BUAD",
+    "title": "Business Administration"
+  },
+  {
+    "prefix": "BUCO",
+    "title": "Business Communication"
+  },
+  {
+    "prefix": "CBG",
+    "title": "Cancer Biology and Genomics"
+  },
+  {
+    "prefix": "CBY",
+    "title": "Craniofacial Biology"
+  },
+  {
+    "prefix": "CE",
+    "title": "Civil Engineering"
+  },
+  {
+    "prefix": "CHE",
+    "title": "Chemical Engineering"
+  },
+  {
+    "prefix": "CHEM",
+    "title": "Chemistry"
+  },
+  {
+    "prefix": "CJ",
+    "title": "Criminal Justice"
+  },
+  {
+    "prefix": "CLAS",
+    "title": "Classics"
+  },
+  {
+    "prefix": "CMDT",
+    "title": "Community Dentistry"
+  },
+  {
+    "prefix": "CMGT",
+    "title": "Communication Management"
+  },
+  {
+    "prefix": "CMPP",
+    "title": "Motion Picture Producing"
+  },
+  {
+    "prefix": "CNB",
+    "title": "Cell and Neurobiology"
+  },
+  {
+    "prefix": "CNTV",
+    "title": "Cinematic Arts"
+  },
+  {
+    "prefix": "COH",
+    "title": "Community Oral Health"
+  },
+  {
+    "prefix": "COLT",
+    "title": "Comparative Literature"
+  },
+  {
+    "prefix": "COMM",
+    "title": "Communication"
+  },
+  {
+    "prefix": "CORE",
+    "title": "Thematic Option"
+  },
+  {
+    "prefix": "CRIT",
+    "title": "School of Art and Design (Critical Studies)"
+  },
+  {
+    "prefix": "CSCI",
+    "title": "Computer Science"
+  },
+  {
+    "prefix": "CSLC",
+    "title": "Comparative Studies in Literature and Culture"
+  },
+  {
+    "prefix": "CTAN",
+    "title": "Animation"
+  },
+  {
+    "prefix": "CTCS",
+    "title": "Cinema and Media Studies"
+  },
+  {
+    "prefix": "CTIN",
+    "title": "Interactive Media"
+  },
+  {
+    "prefix": "CTPR",
+    "title": "Production"
+  },
+  {
+    "prefix": "CTSE",
+    "title": "Curriculum, Teaching and Special Education"
+  },
+  {
+    "prefix": "CTWR",
+    "title": "Writing For Screen And Television"
+  },
+  {
+    "prefix": "CXPT",
+    "title": "Clinical and Experimental Therapeutics"
+  },
+  {
+    "prefix": "DANC",
+    "title": "Dance"
+  },
+  {
+    "prefix": "DBIO",
+    "title": "Dental Biochemistry"
+  },
+  {
+    "prefix": "DENT",
+    "title": "Dentistry"
+  },
+  {
+    "prefix": "DES",
+    "title": "Design"
+  },
+  {
+    "prefix": "DHIS",
+    "title": "Dental Histology"
+  },
+  {
+    "prefix": "DHYG",
+    "title": "Dental Hygiene"
+  },
+  {
+    "prefix": "DIAG",
+    "title": "Oral Diagnosis and Radiology"
+  },
+  {
+    "prefix": "DMAT",
+    "title": "Dental Materials"
+  },
+  {
+    "prefix": "DPBL",
+    "title": "Dental Problem Based Learning"
+  },
+  {
+    "prefix": "DPHR",
+    "title": "Dental Pharmacology"
+  },
+  {
+    "prefix": "DSM",
+    "title": "Digital Social Media"
+  },
+  {
+    "prefix": "DSO",
+    "title": "Data Sciences and Operations"
+  },
+  {
+    "prefix": "DSR",
+    "title": "Development, Stem Cells and Regenerative Medicine"
+  },
+  {
+    "prefix": "EALC",
+    "title": "East Asian Languages and Cultures"
+  },
+  {
+    "prefix": "EASC",
+    "title": "East Asian Studies"
+  },
+  {
+    "prefix": "ECON",
+    "title": "Economics"
+  },
+  {
+    "prefix": "EDCO",
+    "title": "Education Counseling"
+  },
+  {
+    "prefix": "EDHP",
+    "title": "Higher and Postsecondary Education"
+  },
+  {
+    "prefix": "EDPA",
+    "title": "Educational Policy, Planning and Administration"
+  },
+  {
+    "prefix": "EDPT",
+    "title": "Educational Psychology and Technology"
+  },
+  {
+    "prefix": "EDUC",
+    "title": "Education"
+  },
+  {
+    "prefix": "EE",
+    "title": "Electrical Engineering"
+  },
+  {
+    "prefix": "ENDO",
+    "title": "Endodontics"
+  },
+  {
+    "prefix": "ENE",
+    "title": "Environmental Engineering"
+  },
+  {
+    "prefix": "ENGL",
+    "title": "English"
+  },
+  {
+    "prefix": "ENGR",
+    "title": "Engineering"
+  },
+  {
+    "prefix": "ENST",
+    "title": "Environmental Studies"
+  },
+  {
+    "prefix": "FBE",
+    "title": "Finance and Business Economics"
+  },
+  {
+    "prefix": "FIM",
+    "title": "Food Industry Management"
+  },
+  {
+    "prefix": "FPRO",
+    "title": "Fixed Prosthodontics"
+  },
+  {
+    "prefix": "FREN",
+    "title": "French"
+  },
+  {
+    "prefix": "FSEM",
+    "title": "Freshman Seminars"
+  },
+  {
+    "prefix": "GDEN",
+    "title": "Geriatric Dentistry"
+  },
+  {
+    "prefix": "GEOG",
+    "title": "Geography"
+  },
+  {
+    "prefix": "GEOL",
+    "title": "Earth Sciences"
+  },
+  {
+    "prefix": "GERM",
+    "title": "German"
+  },
+  {
+    "prefix": "GERO",
+    "title": "Gerontology"
+  },
+  {
+    "prefix": "GESM",
+    "title": "General Education Seminar"
+  },
+  {
+    "prefix": "GPPD",
+    "title": "Global Policy, Planning and Development"
+  },
+  {
+    "prefix": "GPR",
+    "title": "General Practice Residency"
+  },
+  {
+    "prefix": "GR",
+    "title": "Greek"
+  },
+  {
+    "prefix": "GRSC",
+    "title": "Graduate Studies"
+  },
+  {
+    "prefix": "GSBA",
+    "title": "Graduate School of Business Administration"
+  },
+  {
+    "prefix": "GSPD",
+    "title": "Geriatric and Special Patient Dentistry"
+  },
+  {
+    "prefix": "HBHV",
+    "title": "Human Behavior"
+  },
+  {
+    "prefix": "HBIO",
+    "title": "Human Biology"
+  },
+  {
+    "prefix": "HCDA",
+    "title": "Health Care Decision Analysis"
+  },
+  {
+    "prefix": "HEBR",
+    "title": "Hebrew"
+  },
+  {
+    "prefix": "HIST",
+    "title": "History"
+  },
+  {
+    "prefix": "HMGT",
+    "title": "Health Care Management"
+  },
+  {
+    "prefix": "HP",
+    "title": "Health Promotion and Disease Prevention Studies"
+  },
+  {
+    "prefix": "HRM",
+    "title": "Human Resource Management"
+  },
+  {
+    "prefix": "IDSN",
+    "title": "Integrated Design, Business and Technology"
+  },
+  {
+    "prefix": "IML",
+    "title": "Media Arts and Practice"
+  },
+  {
+    "prefix": "INDD",
+    "title": "Interdisciplinary \u2014 Developmental Dentistry"
+  },
+  {
+    "prefix": "INDS",
+    "title": "Interdisciplinary Major Program"
+  },
+  {
+    "prefix": "INF",
+    "title": "Informatics"
+  },
+  {
+    "prefix": "INTB",
+    "title": "Interdisciplinary \u2014 Basic Science"
+  },
+  {
+    "prefix": "INTD",
+    "title": "Interdepartmental Medicine"
+  },
+  {
+    "prefix": "INTP",
+    "title": "Interdisciplinary \u2014 Practice Dynamics"
+  },
+  {
+    "prefix": "INTR",
+    "title": "Interdisciplinary \u2014 Restorative Dentistry"
+  },
+  {
+    "prefix": "INTS",
+    "title": "Interdisciplinary \u2014 Surgical Sciences"
+  },
+  {
+    "prefix": "INTX",
+    "title": "Interdisciplinary \u2014 Diagnostic Sciences"
+  },
+  {
+    "prefix": "IR",
+    "title": "International Relations"
+  },
+  {
+    "prefix": "IRAN",
+    "title": "Persian"
+  },
+  {
+    "prefix": "ISE",
+    "title": "Industrial and Systems Engineering"
+  },
+  {
+    "prefix": "ITAL",
+    "title": "Italian"
+  },
+  {
+    "prefix": "ITP",
+    "title": "Information Technology Program"
+  },
+  {
+    "prefix": "JOUR",
+    "title": "Journalism"
+  },
+  {
+    "prefix": "JS",
+    "title": "Judaic Studies"
+  },
+  {
+    "prefix": "LAT",
+    "title": "Latin"
+  },
+  {
+    "prefix": "LAW",
+    "title": "Law"
+  },
+  {
+    "prefix": "LBST",
+    "title": "Liberal Studies"
+  },
+  {
+    "prefix": "LIM",
+    "title": "Library and Information Management"
+  },
+  {
+    "prefix": "LING",
+    "title": "Linguistics"
+  },
+  {
+    "prefix": "MASC",
+    "title": "Materials Science"
+  },
+  {
+    "prefix": "MATH",
+    "title": "Mathematics"
+  },
+  {
+    "prefix": "MBIO",
+    "title": "Microbiology and Immunology"
+  },
+  {
+    "prefix": "MBPH",
+    "title": "Medical Biophysics"
+  },
+  {
+    "prefix": "MDA",
+    "title": "Multidisciplinary Activities"
+  },
+  {
+    "prefix": "MDES",
+    "title": "Middle East Studies"
+  },
+  {
+    "prefix": "MEDB",
+    "title": "Medical Biology"
+  },
+  {
+    "prefix": "MEDS",
+    "title": "Medical Sciences"
+  },
+  {
+    "prefix": "MICB",
+    "title": "Molecular Microbiology and Immunology"
+  },
+  {
+    "prefix": "MKT",
+    "title": "Marketing"
+  },
+  {
+    "prefix": "MOR",
+    "title": "Management and Organization"
+  },
+  {
+    "prefix": "MPEM",
+    "title": "Performance (Early Music)"
+  },
+  {
+    "prefix": "MPGU",
+    "title": "Performance (Guitar)"
+  },
+  {
+    "prefix": "MPHY",
+    "title": "Medical Physiology"
+  },
+  {
+    "prefix": "MPKS",
+    "title": "Performance (Keyboard Studies)"
+  },
+  {
+    "prefix": "MPPM",
+    "title": "Performance (Popular Music)"
+  },
+  {
+    "prefix": "MPST",
+    "title": "Performance (Strings)"
+  },
+  {
+    "prefix": "MPTX",
+    "title": "Molecular Pharmacology and Toxicology"
+  },
+  {
+    "prefix": "MPVA",
+    "title": "Performance (Vocal Arts)"
+  },
+  {
+    "prefix": "MPWP",
+    "title": "Performance (Wind and Percussion)"
+  },
+  {
+    "prefix": "MS",
+    "title": "Military Science"
+  },
+  {
+    "prefix": "MSCR",
+    "title": "Sacred Music"
+  },
+  {
+    "prefix": "MSS",
+    "title": "Molecular Structure and Signaling"
+  },
+  {
+    "prefix": "MTAL",
+    "title": "Music Teaching and Learning"
+  },
+  {
+    "prefix": "MTEC",
+    "title": "Music Technology"
+  },
+  {
+    "prefix": "MUCD",
+    "title": "Conducting"
+  },
+  {
+    "prefix": "MUCM",
+    "title": "Choral Music"
+  },
+  {
+    "prefix": "MUCO",
+    "title": "Composition"
+  },
+  {
+    "prefix": "MUEN",
+    "title": "Music Ensemble"
+  },
+  {
+    "prefix": "MUHL",
+    "title": "Music History and Literature"
+  },
+  {
+    "prefix": "MUIN",
+    "title": "Music Industry"
+  },
+  {
+    "prefix": "MUJZ",
+    "title": "Jazz Studies"
+  },
+  {
+    "prefix": "MUSC",
+    "title": "School of Music"
+  },
+  {
+    "prefix": "NAUT",
+    "title": "Nautical Science"
+  },
+  {
+    "prefix": "NEUR",
+    "title": "Neuroscience (Undergraduate)"
+  },
+  {
+    "prefix": "NIIN",
+    "title": "Neuroimaging and Informatics"
+  },
+  {
+    "prefix": "NSC",
+    "title": "Naval Science"
+  },
+  {
+    "prefix": "NSCI",
+    "title": "Neuroscience (Graduate)"
+  },
+  {
+    "prefix": "NURS",
+    "title": "Nursing"
+  },
+  {
+    "prefix": "OCCL",
+    "title": "Occlusion"
+  },
+  {
+    "prefix": "OFP",
+    "title": "Orofacial Pain Oral Medicine"
+  },
+  {
+    "prefix": "OFPM",
+    "title": "Orofacial Pain"
+  },
+  {
+    "prefix": "OMOD",
+    "title": "Oral Medicine Oral Diagnosis"
+  },
+  {
+    "prefix": "OPER",
+    "title": "Operative Dentistry"
+  },
+  {
+    "prefix": "OPR",
+    "title": "Oral Pathology and Radiology"
+  },
+  {
+    "prefix": "ORTH",
+    "title": "Orthodontics"
+  },
+  {
+    "prefix": "OS",
+    "title": "Ocean Sciences"
+  },
+  {
+    "prefix": "OT",
+    "title": "Occupational Science and Occupational Therapy"
+  },
+  {
+    "prefix": "PAIN",
+    "title": "Pain Medicine"
+  },
+  {
+    "prefix": "PATH",
+    "title": "Pathology (Herman Ostrow School of Dentistry)"
+  },
+  {
+    "prefix": "PCPA",
+    "title": "Primary Care Physician Assistant"
+  },
+  {
+    "prefix": "PEDO",
+    "title": "Pediatric Dentistry"
+  },
+  {
+    "prefix": "PERI",
+    "title": "Periodontics"
+  },
+  {
+    "prefix": "PHBI",
+    "title": "Physiology and Biophysics"
+  },
+  {
+    "prefix": "PHED",
+    "title": "Physical Education"
+  },
+  {
+    "prefix": "PHIL",
+    "title": "Philosophy"
+  },
+  {
+    "prefix": "PHRD",
+    "title": "Pharmacy"
+  },
+  {
+    "prefix": "PHTS",
+    "title": "Pharmaceutical and Translational Sciences"
+  },
+  {
+    "prefix": "PHYS",
+    "title": "Physics"
+  },
+  {
+    "prefix": "PJMT",
+    "title": "Project Management"
+  },
+  {
+    "prefix": "PLUS",
+    "title": "Urban and Regional Planning"
+  },
+  {
+    "prefix": "PM",
+    "title": "Preventive Medicine"
+  },
+  {
+    "prefix": "PMEP",
+    "title": "Pharmaceutical Economics and Policy"
+  },
+  {
+    "prefix": "POIR",
+    "title": "Political Science and International Relations"
+  },
+  {
+    "prefix": "PORT",
+    "title": "Portuguese"
+  },
+  {
+    "prefix": "POSC",
+    "title": "Political Science"
+  },
+  {
+    "prefix": "PPD",
+    "title": "Policy, Planning, and Development"
+  },
+  {
+    "prefix": "PPDE",
+    "title": "Policy, Planning, and Development \u2014 Expanded"
+  },
+  {
+    "prefix": "PR",
+    "title": "Public Relations"
+  },
+  {
+    "prefix": "PSCI",
+    "title": "Pharmaceutical Sciences"
+  },
+  {
+    "prefix": "PSYC",
+    "title": "Psychology"
+  },
+  {
+    "prefix": "PT",
+    "title": "Physical Therapy"
+  },
+  {
+    "prefix": "PTE",
+    "title": "Petroleum Engineering"
+  },
+  {
+    "prefix": "PTHL",
+    "title": "Pathology (Keck School of Medicine)"
+  },
+  {
+    "prefix": "PUAD",
+    "title": "Public Administration"
+  },
+  {
+    "prefix": "PUBD",
+    "title": "Public Diplomacy"
+  },
+  {
+    "prefix": "QBIO",
+    "title": "Quantitative Biology"
+  },
+  {
+    "prefix": "RED",
+    "title": "Real Estate Development"
+  },
+  {
+    "prefix": "REL",
+    "title": "Religion"
+  },
+  {
+    "prefix": "REST",
+    "title": "Restorative Dentistry"
+  },
+  {
+    "prefix": "RPRO",
+    "title": "Removable Prosthodontics"
+  },
+  {
+    "prefix": "RSCI",
+    "title": "Regulatory Science"
+  },
+  {
+    "prefix": "RXRS",
+    "title": "Pharmaceutical and Regulatory Science"
+  },
+  {
+    "prefix": "SAE",
+    "title": "Systems Architecting and Engineering"
+  },
+  {
+    "prefix": "SCOR",
+    "title": "Screen Scoring"
+  },
+  {
+    "prefix": "SCRM",
+    "title": "Stem Cell Biology and Regenerative Medicine"
+  },
+  {
+    "prefix": "SLL",
+    "title": "Slavic Languages and Literatures"
+  },
+  {
+    "prefix": "SOCI",
+    "title": "Sociology"
+  },
+  {
+    "prefix": "SOWK",
+    "title": "Social Work"
+  },
+  {
+    "prefix": "SPAN",
+    "title": "Spanish"
+  },
+  {
+    "prefix": "SSCI",
+    "title": "Spatial Sciences Institute"
+  },
+  {
+    "prefix": "SSEM",
+    "title": "Sophomore Seminars"
+  },
+  {
+    "prefix": "SURG",
+    "title": "Oral Surgery"
+  },
+  {
+    "prefix": "SWMS",
+    "title": "Gender Studies"
+  },
+  {
+    "prefix": "THTR",
+    "title": "Dramatic Arts"
+  },
+  {
+    "prefix": "TRGN",
+    "title": "Translational Genomics"
+  },
+  {
+    "prefix": "USC",
+    "title": "University of Southern California"
+  },
+  {
+    "prefix": "VISS",
+    "title": "Visual Studies"
+  },
+  {
+    "prefix": "WRIT",
+    "title": "Writing Program"
+  }
+]

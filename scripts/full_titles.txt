@@ -38,7 +38,6 @@
 <option value="1808">Classics</option>
 <option value="1809">Community Dentistry</option>
 <option value="1810">Communication Management</option>
-<option value="2549">Community Oral Health</option>
 <option value="1811">Motion Picture Producing</option>
 <option value="1812">Cinematic Arts</option>
 <option value="1813">Comparative Literature</option>
