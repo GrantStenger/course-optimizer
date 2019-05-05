@@ -2,6 +2,7 @@ from flask import render_template, flash, redirect, url_for, request
 from app import app, db
 from flask_login import current_user, login_user, logout_user, login_required
 from datetime import datetime
+import json
 from app.forms import LoginForm, RegistrationForm, CourseRegistrationForm
 from app.forms import DropCourseForm, EditProfileForm, UpdateCourseValForm
 from app.forms import DepartmentsForm
@@ -17,37 +18,7 @@ def before_request():
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Grant'}
-    courses = [
-        {
-            'prefix': 'CSCI',
-            'number': '675',
-            'title': 'Convex and Combinatorial Optimization',
-            'description': 'Topics include: Convex sets and functions; ' + \
-                           'convex optimization problems; geometric and ' + \
-                           'Lagrangian duality; simplex algorithm; ' + \
-                           'ellipsoid algorithm and its implications; ' + \
-                           'matroid theory; submodular optimization. ',
-            'units': 4,
-            'prereqs': ['CSCI 570', 'CSCI 670'],
-            'value': 9
-        },
-        {
-            'prefix': 'CSCI',
-            'number': '670',
-            'title': 'Advanced Analysis of Algorithms',
-            'description': 'Fundamental techniques for design and analysis ' + \
-                           'of algorithms. Dynamic programming; network ' + \
-                           'flows; theory of NP-completeness; linear ' + \
-                           'programming; approximation, randomized, and ' + \
-                           'online algorithms; basic cryptography. ',
-            'units': 4,
-            'prereqs': ['CSCI 570'],
-            'value': 8
-        }
-    ]
-    courses = []
-    return render_template('index.html', name='Grant', courses=courses)
+    return render_template('index.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -80,11 +51,22 @@ def register():
         user = User(username=form.username.data, email=form.email.data)
         user.set_password(form.password.data)
         db.session.add(user)
+        add_courses(user)
         db.session.commit()
         login_user(user, remember=True)
         flash('Congratulations, you are now a registered user!')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
+
+def add_courses(user):
+    with open("../data/departments.json", "r") as read_file:
+        courses = json.load(read_file)
+    for course in courses:
+        print(course, course['title'], course['prefix'])
+        course = Department(title=course['title'], prefix=course['prefix'],
+                            value=0, user=user)
+        # db.session.add(course)
+        print(course, course.title, course.prefix)
 
 @app.route('/add_Course', methods=['GET', 'POST'])
 @login_required
@@ -129,22 +111,21 @@ def user(username):
 @login_required
 def new_user(username):
     user = User.query.filter_by(username=username).first_or_404()
-
-    print(user)
-
-    dept_form = DepartmentsForm()
-    if dept_form.validate_on_submit():
-        print(request)
-        print(request.form)
-        print(request.form['dept_id'])
-        department = user.departments.filter_by(id=request.form['dept_id']).one()
-        department.value = dept_form.value.data
-        db.session.commit()
+    form = DepartmentsForm()
+    if form.validate_on_submit():
+        print("HERRREE")
+        depts = user.departments.all()
+        for dept in depts:
+            print(request.form[str(dept.id) + "_val"])
+            # dept.value = request.form[str(dept.id) + "_val"]
+            # department = user.departments.filter_by(id=request.form['dept_id']).one()
+            # department.value = dept_form.value.data
+        # db.session.commit()
         flash('Department value has been updated.')
         return redirect(url_for('user', username=current_user.username))
-
-    return render_template('new_user.html', user=user,
-                           dept_form=dept_form)
+    else:
+        print("FUCK")
+    return render_template('new_user.html', user=user, form=form)
 
 @app.route('/users')
 def users():

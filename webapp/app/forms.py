@@ -61,3 +61,4 @@ class UpdateCourseValForm(FlaskForm):
 
 class DepartmentsForm(FlaskForm):
     value = IntegerField('Value', validators=[DataRequired()])
+    submit= SubmitField('Submit')

@@ -2,12 +2,15 @@
 
 {% block content %}
   <h3>Hello new user, please rate the following departments:</h3>
-  {% for department in user.departments %}
-    <form action="" method="post">
-      {{ dept_form.hidden_tag() }}
-      <input type="text" name="value"  size=3 value={{ department.value }}>
-      &nbsp;{{ department.title }}
-      <input type="hidden" name="dept_id" value={{ department.id }}>
-    </form>
-  {% endfor %}
+  <form action="" method="post">
+    {{ form.hidden_tag() }}
+    {% for dept in user.departments %}
+      <p>
+        <input type="text" name=str(dept.id) + "_val" size=3 value={{ dept.value }}>
+        &nbsp;{{ dept.title }} ({{ dept.prefix }})
+        <input type="hidden" name=str(dept.id) + "_dept_id" value={{ dept.id }}>
+      </p>
+    {% endfor %}
+    {{ form.submit }}
+  </form>
 {% endblock %}

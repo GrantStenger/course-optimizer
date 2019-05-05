@@ -49,6 +49,7 @@ class Course(db.Model):
 
 class Department(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    prefix = db.Column(db.String(4))
     title = db.Column(db.String(100), nullable=False)
     value = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
